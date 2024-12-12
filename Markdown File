@@ -1,0 +1,24 @@
+
+
+# Authentication Setup
+
+This project uses **JWT Authentication** for secure access to the API. The authentication is implemented using the `djangorestframework-simplejwt` package.
+
+## Prerequisites
+
+Ensure you have the following installed:
+- Python 3.8 or higher
+- Django 4.x or higher
+- djangorestframework-simplejwt
+
+## Endpoints for Authentication
+
+1. **Obtain Token**:  
+   URL: `/api/token/`  
+   Method: `POST`  
+   Request Body:
+   ```json
+   {
+       "username": "your_username",
+       "password": "your_password"
+   }
